@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/photo_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:contentDescription="sheikhPhoto"
+        android:scaleType="fitCenter"
+        tools:src="@drawable/holy_quran" />
+
+    <TextView
+        android:id="@+id/name_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="#9c27b000"
+        android:padding="16dp"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textSize="15sp"
+        tools:text="Sheikh" />
+
+</RelativeLayout>

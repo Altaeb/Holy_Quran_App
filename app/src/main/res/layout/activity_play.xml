@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="abdelfattah.holyquran.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4">
+
+        <ImageView
+            android:id="@+id/cover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:adjustViewBounds="true"
+            android:alpha="0.75"
+            android:contentDescription="albumCover"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/theholyquran" />
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#9c27b000"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            tools:listitem="@layout/surah_item" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingStart="16sp"
+        android:paddingTop="8dp"
+        android:paddingEnd="16sp"
+        android:paddingBottom="8dp">
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:stretchColumns="1">
+
+            <TableRow tools:ignore="UselessParent">
+
+                <TextView
+                    android:id="@+id/elapsedTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00:00" />
+
+                <SeekBar
+                    android:id="@+id/seekBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/remainingTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00:00" />
+            </TableRow>
+
+        </TableLayout>
+
+        <ImageView
+            android:id="@+id/randomIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tableLayout"
+            android:layout_toStartOf="@id/previousIcon"
+            android:layout_toLeftOf="@id/previousIcon"
+            android:contentDescription="shuffle"
+            android:src="@drawable/ic_shuffle" />
+
+        <ImageView
+            android:id="@+id/previousIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tableLayout"
+            android:layout_toStartOf="@id/playStopIcon"
+            android:layout_toLeftOf="@id/playStopIcon"
+            android:contentDescription="previous"
+            android:src="@drawable/ic_skip_previous" />
+
+        <ImageView
+            android:id="@+id/playStopIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tableLayout"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="play"
+            android:src="@drawable/ic_play_circle_filled" />
+
+        <ImageView
+            android:id="@+id/nextIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tableLayout"
+            android:layout_toEndOf="@id/playStopIcon"
+            android:layout_toRightOf="@id/playStopIcon"
+            android:contentDescription="next"
+            android:src="@drawable/ic_skip_next" />
+
+        <ImageView
+            android:id="@+id/replayIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tableLayout"
+            android:layout_toEndOf="@id/nextIcon"
+            android:layout_toRightOf="@id/nextIcon"
+            android:contentDescription="replay"
+            android:src="@drawable/ic_replay" />
+
+    </RelativeLayout>
+
+</LinearLayout>
