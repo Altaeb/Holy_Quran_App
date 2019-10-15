@@ -9,14 +9,14 @@
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabLayout"
-        tabBackground="#673AB7"
+        tabBackground="@color/backgroundItem"
         tabGravity="fill"
         tabMaxWidth="0dp"
-        tabSelectedTextColor="#8BC34A"
+        tabSelectedTextColor="@color/colorPrimary"
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:background="#ffffffff"
-        android:textColor="#B3FFFFFF">
+        android:background="@color/background"
+        android:textColor="@color/textColor">
 
     </com.google.android.material.tabs.TabLayout>
 

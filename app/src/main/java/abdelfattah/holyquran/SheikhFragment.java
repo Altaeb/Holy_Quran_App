@@ -18,7 +18,7 @@ import androidx.fragment.app.Fragment;
  * Activities containing this fragment MUST implement the {@link OnSheikhSelectedListener}
  * interface.
  */
-public class SheikhFragment extends Fragment {
+class SheikhFragment extends Fragment {
 
     private OnSheikhSelectedListener mListener;
 

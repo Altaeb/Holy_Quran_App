@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate ( savedInstanceState );
         setContentView ( R.layout.activity_main );
+        DummyContent.add ( this );
 
         // To remove the shadow
         ActionBar actionBar = getSupportActionBar ();
@@ -40,8 +41,8 @@ public class MainActivity extends AppCompatActivity
 
     private String[] initPagesTitles() {
         String[] pageTitles = new String[SurahPagerAdapter.M_NB_VIEWS];
-        pageTitles[0] = "albums";
-        pageTitles[1] = "elders";
+        pageTitles[0] = this.getString( R.string.albums);
+        pageTitles[1] = this.getString( R.string.elders);
         return pageTitles;
     }
 

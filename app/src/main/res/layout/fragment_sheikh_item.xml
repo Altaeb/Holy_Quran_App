@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:adjustViewBounds="true"
-        android:contentDescription="sheikhPhoto"
+        android:contentDescription="@string/sheikhphoto"
         android:scaleType="fitCenter"
         tools:src="@drawable/holy_quran" />
 
@@ -19,7 +19,7 @@
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_alignParentBottom="true"
-        android:background="#9c27b000"
+        android:background="@color/backgroundItem"
         android:padding="16dp"
         android:textAppearance="?attr/textAppearanceListItem"
         android:textSize="15sp"

@@ -18,7 +18,7 @@
             android:layout_centerHorizontal="true"
             android:adjustViewBounds="true"
             android:alpha="0.75"
-            android:contentDescription="albumCover"
+            android:contentDescription="@string/albumcover"
             android:scaleType="centerCrop"
             tools:src="@drawable/theholyquran" />
 
@@ -26,7 +26,7 @@
             android:id="@+id/list"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#9c27b000"
+            android:background="@color/backgroundItem"
             android:paddingTop="8dp"
             android:paddingBottom="8dp"
             tools:listitem="@layout/surah_item" />
@@ -56,7 +56,7 @@
                     android:id="@+id/elapsedTime"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="00:00" />
+                    android:text="@string/_00_00" />
 
                 <SeekBar
                     android:id="@+id/seekBar"
@@ -67,7 +67,7 @@
                     android:id="@+id/remainingTime"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="00:00" />
+                    android:text="@string/_00_00" />
             </TableRow>
 
         </TableLayout>
@@ -79,7 +79,7 @@
             android:layout_below="@id/tableLayout"
             android:layout_toStartOf="@id/previousIcon"
             android:layout_toLeftOf="@id/previousIcon"
-            android:contentDescription="shuffle"
+            android:contentDescription="@string/shuffle"
             android:src="@drawable/ic_shuffle" />
 
         <ImageView
@@ -89,7 +89,7 @@
             android:layout_below="@id/tableLayout"
             android:layout_toStartOf="@id/playStopIcon"
             android:layout_toLeftOf="@id/playStopIcon"
-            android:contentDescription="previous"
+            android:contentDescription="@string/previous"
             android:src="@drawable/ic_skip_previous" />
 
         <ImageView
@@ -98,7 +98,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/tableLayout"
             android:layout_centerHorizontal="true"
-            android:contentDescription="play"
+            android:contentDescription="@string/play"
             android:src="@drawable/ic_play_circle_filled" />
 
         <ImageView
@@ -108,7 +108,7 @@
             android:layout_below="@id/tableLayout"
             android:layout_toEndOf="@id/playStopIcon"
             android:layout_toRightOf="@id/playStopIcon"
-            android:contentDescription="next"
+            android:contentDescription="@string/next"
             android:src="@drawable/ic_skip_next" />
 
         <ImageView
@@ -118,7 +118,7 @@
             android:layout_below="@id/tableLayout"
             android:layout_toEndOf="@id/nextIcon"
             android:layout_toRightOf="@id/nextIcon"
-            android:contentDescription="replay"
+            android:contentDescription="@string/replay"
             android:src="@drawable/ic_replay" />
 
     </RelativeLayout>

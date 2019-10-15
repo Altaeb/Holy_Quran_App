@@ -11,7 +11,7 @@ import android.widget.GridView;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
-public class AlbumFragment extends Fragment {
+class AlbumFragment extends Fragment {
 
     private OnAlbumSelectedListener mListener;
 

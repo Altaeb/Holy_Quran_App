@@ -343,7 +343,7 @@ public class PlayActivity extends AppCompatActivity {
         }
 
         if (resIdMedia == 0) {
-            Toast.makeText ( this, "noSurahFile", Toast.LENGTH_SHORT ).show ();
+            Toast.makeText ( this, this.getString ( R.string.noSurahFile ), Toast.LENGTH_SHORT ).show ();
         }
 
         countDownTimer.cancel ();

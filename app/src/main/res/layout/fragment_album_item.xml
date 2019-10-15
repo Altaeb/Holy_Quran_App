@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:adjustViewBounds="true"
-        android:contentDescription="albumCover"
+        android:contentDescription="@string/albumcover"
         android:scaleType="fitCenter"
         tools:src="@drawable/quran" />
 
@@ -18,7 +18,7 @@
         android:layout_width="match_parent"
         android:layout_height="68dp"
         android:layout_alignParentBottom="true"
-        android:background="#9c27b000"
+        android:background="@color/backgroundItem"
         android:orientation="vertical"
         android:padding="16dp">
 
