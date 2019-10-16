@@ -7,22 +7,13 @@
 
     <ImageView
         android:id="@+id/photo_image_view"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:adjustViewBounds="true"
+        style="@style/imageView"
         android:contentDescription="@string/sheikhphoto"
-        android:scaleType="fitCenter"
         tools:src="@drawable/holy_quran" />
 
     <TextView
         android:id="@+id/name_text_view"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/dp_48"
-        android:layout_alignParentBottom="true"
-        android:background="@color/backgroundItem"
-        android:padding="@dimen/dp_16"
-        android:textAppearance="?attr/textAppearanceListItem"
-        android:textSize="@dimen/sp_15"
+        style="@style/nameTextView"
         tools:text="Sheikh" />
 
 </RelativeLayout>

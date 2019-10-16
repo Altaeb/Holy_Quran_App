@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
@@ -6,6 +6,166 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="imageViewCover">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:alpha">0.75</item>
+        <item name="android:contentDescription">@string/albumcover</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="listView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/backgroundItem</item>
+        <item name="android:paddingTop">@dimen/dp_8</item>
+        <item name="android:paddingBottom">@dimen/dp_8</item>
+    </style>
+
+    <style name="relativeLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp_0</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingStart" tools:targetApi="jelly_bean_mr1">@dimen/dp_16</item>
+        <item name="android:paddingTop">@dimen/dp_8</item>
+        <item name="android:paddingEnd" tools:targetApi="jelly_bean_mr1">@dimen/dp_16</item>
+        <item name="android:paddingBottom">@dimen/dp_8</item>
+    </style>
+
+    <style name="tableLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/dp_8</item>
+        <item name="android:paddingBottom">@dimen/dp_8</item>
+        <item name="android:stretchColumns">1</item>
+    </style>
+
+    <style name="TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="SeekBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="randomIcon">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_below">@id/tableLayout</item>
+        <item name="android:layout_toStartOf">@id/previousIcon</item>
+        <item name="android:layout_toLeftOf">@id/previousIcon</item>
+        <item name="android:contentDescription">@string/shuffle</item>
+    </style>
+
+    <style name="previousIcon">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_below">@id/tableLayout</item>
+        <item name="android:layout_toStartOf">@id/playStopIcon</item>
+        <item name="android:layout_toLeftOf">@id/playStopIcon</item>
+        <item name="android:contentDescription">@string/previous</item>
+    </style>
+
+    <style name="playStopIco">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_below">@id/tableLayout</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:contentDescription">@string/play</item>
+    </style>
+
+    <style name="nextIcon">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_below">@id/tableLayout</item>
+        <item name="android:layout_toEndOf">@id/playStopIcon</item>
+        <item name="android:layout_toRightOf">@id/playStopIcon</item>
+        <item name="android:contentDescription">@string/next</item>
+    </style>
+
+    <style name="replayIcon">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_below">@id/tableLayout</item>
+        <item name="android:layout_toEndOf">@id/nextIcon</item>
+        <item name="android:layout_toRightOf">@id/nextIcon</item>
+        <item name="android:contentDescription">@string/replay</item>
+    </style>
+
+    <style name="tabLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp_48</item>
+        <item name="android:background">@color/background</item>
+        <item name="android:textColor">@color/textColor</item>
+    </style>
+
+    <style name="imageView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:scaleType">fitCenter</item>
+    </style>
+
+    <style name="linearLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp_68</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:background">@color/backgroundItem</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">@dimen/dp_16</item>
+    </style>
+
+    <style name="name_text_view">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textAppearance">?attr/textAppearanceListItem</item>
+        <item name="android:textSize">@dimen/sp_15</item>
+    </style>
+
+    <style name="sheikhTextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">?attr/textAppearanceListItemSecondary</item>
+        <item name="android:textSize">@dimen/sp_12</item>
+    </style>
+
+    <style name="gridView">
+        <item name="android:name">com.bwaim.musicalstructure.AlbumFragment</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:columnWidth">@dimen/dp_125</item>
+        <item name="android:horizontalSpacing">@dimen/dp_4</item>
+        <item name="android:numColumns">auto_fit</item>
+        <item name="android:padding">@dimen/dp_4</item>
+        <item name="android:verticalSpacing">@dimen/dp_4</item>
+    </style>
+
+    <style name="nameTextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp_48</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:background">@color/backgroundItem</item>
+        <item name="android:padding">@dimen/dp_16</item>
+        <item name="android:textAppearance">?attr/textAppearanceListItem</item>
+        <item name="android:textSize">@dimen/sp_15</item>
+    </style>
+
+    <style name="textView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp_48</item>
+        <item name="android:paddingStart">@dimen/dp_16</item>
+        <item name="android:paddingTop">@dimen/dp_8</item>
+        <item name="android:paddingEnd">@dimen/dp_16</item>
+        <item name="android:textColor">@drawable/item_text_color_key</item>
+        <item name="android:textSize">@dimen/sp_16</item>
     </style>
 
 </resources>
