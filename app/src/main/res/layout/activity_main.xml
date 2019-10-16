@@ -11,10 +11,10 @@
         android:id="@+id/tabLayout"
         tabBackground="@color/backgroundItem"
         tabGravity="fill"
-        tabMaxWidth="0dp"
+        tabMaxWidth="@dimen/dp_0"
         tabSelectedTextColor="@color/colorPrimary"
         android:layout_width="match_parent"
-        android:layout_height="48dp"
+        android:layout_height="@dimen/dp_48"
         android:background="@color/background"
         android:textColor="@color/textColor">
 

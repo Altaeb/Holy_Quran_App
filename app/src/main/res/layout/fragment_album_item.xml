@@ -16,11 +16,11 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="68dp"
+        android:layout_height="@dimen/dp_68"
         android:layout_alignParentBottom="true"
         android:background="@color/backgroundItem"
         android:orientation="vertical"
-        android:padding="16dp">
+        android:padding="@dimen/dp_16">
 
 
         <TextView
@@ -30,7 +30,7 @@
             android:ellipsize="end"
             android:maxLines="1"
             android:textAppearance="?attr/textAppearanceListItem"
-            android:textSize="15sp"
+            android:textSize="@dimen/sp_15"
             tools:text="Album" />
 
         <TextView
@@ -38,7 +38,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAppearance="?attr/textAppearanceListItemSecondary"
-            android:textSize="12sp"
+            android:textSize="@dimen/sp_12"
             tools:text="Sheikh" />
 
     </LinearLayout>

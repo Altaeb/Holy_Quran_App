@@ -8,7 +8,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="@dimen/dp_0"
         android:layout_weight="4">
 
         <ImageView
@@ -27,27 +27,27 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/backgroundItem"
-            android:paddingTop="8dp"
-            android:paddingBottom="8dp"
+            android:paddingTop="@dimen/dp_8"
+            android:paddingBottom="@dimen/dp_8"
             tools:listitem="@layout/surah_item" />
 
     </RelativeLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="@dimen/dp_0"
         android:layout_weight="1"
-        android:paddingStart="16sp"
-        android:paddingTop="8dp"
-        android:paddingEnd="16sp"
-        android:paddingBottom="8dp">
+        android:paddingStart="@dimen/sp_16"
+        android:paddingTop="@dimen/dp_8"
+        android:paddingEnd="@dimen/sp_16"
+        android:paddingBottom="@dimen/dp_8">
 
         <TableLayout
             android:id="@+id/tableLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingTop="8dp"
-            android:paddingBottom="8dp"
+            android:paddingTop="@dimen/dp_8"
+            android:paddingBottom="@dimen/dp_8"
             android:stretchColumns="1">
 
             <TableRow tools:ignore="UselessParent">

@@ -8,12 +8,12 @@
     <TextView
         android:id="@+id/name_text_view"
         android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:paddingStart="16dp"
-        android:paddingTop="8dp"
-        android:paddingEnd="16dp"
+        android:layout_height="@dimen/dp_48"
+        android:paddingStart="@dimen/dp_16"
+        android:paddingTop="@dimen/dp_8"
+        android:paddingEnd="@dimen/dp_16"
         android:textColor="@drawable/item_text_color_key"
-        android:textSize="16sp"
+        android:textSize="@dimen/sp_16"
         tools:text="Tu Falta de Querer" />
 
 </LinearLayout>
