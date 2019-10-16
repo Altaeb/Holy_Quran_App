@@ -22,8 +22,7 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:background">@color/backgroundItem</item>
-        <item name="android:paddingTop">@dimen/dp_8</item>
-        <item name="android:paddingBottom">@dimen/dp_8</item>
+        <item name="android:padding">@dimen/dp_8</item>
     </style>
 
     <style name="relativeLayout">
@@ -161,9 +160,9 @@
     <style name="textView">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">@dimen/dp_48</item>
-        <item name="android:paddingStart">@dimen/dp_16</item>
+        <item name="android:paddingStart" tools:targetApi="jelly_bean_mr1">@dimen/dp_16</item>
         <item name="android:paddingTop">@dimen/dp_8</item>
-        <item name="android:paddingEnd">@dimen/dp_16</item>
+        <item name="android:paddingEnd" tools:targetApi="jelly_bean_mr1">@dimen/dp_16</item>
         <item name="android:textColor">@drawable/item_text_color_key</item>
         <item name="android:textSize">@dimen/sp_16</item>
     </style>

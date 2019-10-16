@@ -104,6 +104,7 @@
     <string name="altariq">At-Tariq ( The Night-Comer )</string>
     <string name="alala">Al-A\'la ( The Most High )</string>
     <string name="alghashiya">Al-Ghashiya ( The Overwhelming )</string>
+    <string name="alfajr">Al-Fajr ( The Dawn )</string>
     <string name="albalad">Al-Balad ( The City )</string>
     <string name="ashams">Ash-Shams ( The Sun )</string>
     <string name="allayl">Al-Layl ( The Night )</string>
@@ -131,6 +132,7 @@
     <string name="quraish">Quraish ( Quraish )</string>
     <string name="albums">albums</string>
     <string name="elders">elders</string>
-    <string name="noSurahFile">noSurahFile</string>
+    <string name="noSurahFile">No file for surah</string>
+
 
 </resources>

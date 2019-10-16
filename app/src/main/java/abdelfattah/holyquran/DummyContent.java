@@ -124,6 +124,7 @@ class DummyContent extends Application {
         quran_full.addSurah ( new Surah ( context.getString ( R.string.altariq ), 170 ) );
         quran_full.addSurah ( new Surah ( context.getString ( R.string.alala ), 207 ) );
         quran_full.addSurah ( new Surah ( context.getString ( R.string.alghashiya ), 189 ) );
+        quran_full.addSurah ( new Surah ( context.getString( R.string.alfajr) , 189 ) );
         quran_full.addSurah ( new Surah ( context.getString ( R.string.albalad ), 248 ) );
         quran_full.addSurah ( new Surah ( context.getString ( R.string.ashams ), 237 ) );
         quran_full.addSurah ( new Surah ( context.getString ( R.string.allayl ), 280 ) );

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="abdelfattah.holyquran.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4">
+
+        <ImageView
+            android:id="@+id/cover"
+            style="@style/imageViewCover"
+            tools:src="@drawable/theholyquran" />
+
+        <ListView
+            android:id="@+id/list"
+            style="@style/listView"
+            tools:listitem="@layout/surah_item" />
+
+    </RelativeLayout>
+
+    <RelativeLayout style="@style/relativeLayout">
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            style="@style/tableLayout">
+
+            <TableRow tools:ignore="UselessParent">
+
+                <TextView
+                    android:id="@+id/elapsedTime"
+                    style="@style/TextView"
+                    android:text="@string/_00_00" />
+
+                <SeekBar
+                    android:id="@+id/seekBar"
+                    style="@style/SeekBar" />
+
+                <TextView
+                    android:id="@+id/remainingTime"
+                    style="@style/TextView"
+                    android:text="@string/_00_00" />
+            </TableRow>
+
+        </TableLayout>
+
+        <ImageView
+            android:id="@+id/randomIcon"
+            style="@style/randomIcon"
+            android:src="@drawable/ic_shuffle" />
+
+        <ImageView
+            android:id="@+id/previousIcon"
+            style="@style/previousIcon"
+            android:src="@drawable/ic_skip_previous" />
+
+        <ImageView
+            android:id="@+id/playStopIcon"
+            style="@style/playStopIco"
+            android:src="@drawable/ic_play_circle_filled" />
+
+        <ImageView
+            android:id="@+id/nextIcon"
+            style="@style/nextIcon"
+            android:src="@drawable/ic_skip_next" />
+
+        <ImageView
+            android:id="@+id/replayIcon"
+            style="@style/replayIcon"
+            android:src="@drawable/ic_replay" />
+
+    </RelativeLayout>
+
+</LinearLayout>
