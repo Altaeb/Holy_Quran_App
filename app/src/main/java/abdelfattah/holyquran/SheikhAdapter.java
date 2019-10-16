@@ -15,8 +15,8 @@ class SheikhAdapter extends ArrayAdapter<Sheikh> {
 
     /**
      * Constructor
-     *  @param context The current context.
      *
+     * @param context The current context.
      */
     SheikhAdapter(@NonNull Context context) {
         super ( context, 0, DummyContent.ITEMS_SHEIKHS );

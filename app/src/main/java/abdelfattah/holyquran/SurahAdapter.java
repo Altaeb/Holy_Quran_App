@@ -18,7 +18,7 @@ class SurahAdapter extends ArrayAdapter<Surah> {
      * Constructor
      *
      * @param context The current context.
-     * @param surah  The surah to represent in the ListView.
+     * @param surah   The surah to represent in the ListView.
      */
     SurahAdapter(@NonNull Context context, @NonNull List<Surah> surah) {
         super ( context, 0, surah );

@@ -15,8 +15,8 @@ class AlbumAdapter extends ArrayAdapter<Album> {
 
     /**
      * Constructor
-     *  @param context The current context.
      *
+     * @param context The current context.
      */
     AlbumAdapter(@NonNull Context context) {
         super ( context, 0, DummyContent.ITEMS_ALBUMS );
